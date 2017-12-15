@@ -1,0 +1,53 @@
+from flask import Flask, render_template, request
+from wtforms import Form, StringField, TextAreaField, RadioField, SelectField
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+@app.route('/Login.html')
+def Login():
+    return render_template('Login.html')
+
+@app.route('/register.html')
+def register():
+    return render_template('register.html')
+
+
+@app.route('/clinicqueue.html')
+def clinicq():
+    return render_template('ClinicQueue page.html')
+
+
+@app.route('/Clinic Queue - Singapore Buddhist Free Clinic.html')
+def buddhist():
+    return render_template('Clinic Queue - Singapore Buddhist Free Clinic.html')
+@app.route('/Clinic Queue - Parkway Shenton.html')
+def parkway():
+    return render_template('Clinic Queue - Parkway Shenton.html')
+@app.route('/Clinic Queue - Sata Commhealth.html')
+def sata():
+    return render_template('Clinic Queue - Sata Commhealth.html')
+@app.route('/Clinic Queue - Healthway Medical.html')
+def healthway():
+    return render_template('Clinic Queue - Healthway Medical.html')
+@app.route('/Clinic Queue - Raffles Medical.html')
+def raffles():
+    return render_template('Clinic Queue - Raffles Medical.html')
+@app.route('/Clinic Queue - Acumed.html')
+def acumed():
+    return render_template('Clinic Queue - Acumed.html')
+@app.route('/Clinic Queue - Kinder Clinic.html')
+def kinder():
+    return render_template('Clinic Queue - Kinder Clinic.html')
+@app.route('/Clinic Queue - OneDoctors.html')
+def onedoctors():
+    return render_template('Clinic Queue - OneDoctors.html')
+@app.route('/Clinic Queue - My Family Clinic.html')
+def family():
+    return render_template('Clinic Queue - My Family Clinic.html')
+if __name__ == '__main__':
+    app.run()
