@@ -2,15 +2,14 @@ import datetime
 
 
 class Disease:
-    def __init__(self, title,type,cause,symptom,treatment,complication,specialist,created_by):
-        self.__pubid = ''
+    def __init__(self, title,cause,symptom,treatment,complication,detail,created_by ,created_date):
+        self.__diseaseid = ''
         self.__title = title
-        self.__type = type
         self.__cause = cause
         self.__symptom = symptom
         self.__treatment = treatment
         self.__complication = complication
-        self.__specialist = specialist
+        self.__detail = detail
         self.__created_by = created_by
         currentdatetime = datetime.datetime.now()
         create_date = str(currentdatetime.day) + "-" + str(currentdatetime.month) + "-" + str(
@@ -19,8 +18,8 @@ class Disease:
 
 
 
-    def get_pubid(self):
-        return self.__pubid
+    def get_diseaseid(self):
+        return self.__diseaseid
 
     def get_title(self):
         return self.__title
@@ -37,17 +36,14 @@ class Disease:
     def get_complication(self):
         return self.__complication
 
-    def get_specialist(self):
-        return self.__specialist
+    def get_detail(self):
+        return self.__detail
 
     def get_created_by(self):
         return self.__created_by
 
     def get_created_date(self):
         return self.__created_date
-
-    def get_type(self):
-        return self.__type
 
     def set_title(self, title):
         self.__title = title
@@ -64,11 +60,11 @@ class Disease:
     def set_complication(self, complication):
         self.__complication = complication
 
-    def set_specialist(self, specialist):
-        self.__specialist = specialist
+    def set_detail(self, detail):
+        self.__detail = detail
 
-    def set_pubid(self, pubid):
-        self.__pubid = pubid
+    def set_diseaseid(self, diseaseid):
+        self.__diseaseid = diseaseid
 
     def set_created_by(self, created_by):
         self.__createdby = created_by
@@ -76,5 +72,4 @@ class Disease:
     def set_created_date(self, created_date):
         self.__created_date = created_date
 
-    def set_type(self,type):
-        self.__type = type
+
