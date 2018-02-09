@@ -1,16 +1,136 @@
-{% extends 'layout.html' %}
-{% block body %}
 
+<title> Vitality Search For Disease </title>
 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+{% extends "layoutyr.html" %}
+    {%  block body %}
+        <!-- /.col-lg-3 -->
 <style>
-
-.content{
-margin-left:5cm;
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("http://mcfiber.pro/wowopapae.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
 }
 
 
-@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+.bgimg {
+    background-image: url('http://www.tokkoro.com/picsup/3003340-black-and-white_book_browse_dictionary_encyclopedia_knowledge_lexicon_reading_writing.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+    .design1{
+        font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif','Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+
+    .design2{
+        font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: Montserrat,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    }
+
+
+.btn-3,
+.btn-3::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn-3 {
+  background-color:grey;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size:18px;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 4em;
+  position: relative;
+  text-transform: uppercase;
+    font-family:Montserrat;
+}
+
+.btn-3::before,
+.btn-3::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-3:hover {
+  color: #2ecc71;
+}
+
+    /* BUTTON 3 */
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+
+body{
+    padding-top:20px;
+}
+
+
+
+.content {
+    margin-left: 5cm;
+}
+
 
 /* fontawesome */
 [class*="fontawesome-"]:before {
@@ -18,28 +138,27 @@ margin-left:5cm;
 }
 
 
-h3 { color:	white;
-background-color:black;
 
 
- }
+
+
 
 ul.meateaters {
-	list-style-type: none; /* remove default bullet */
-	margin: 16px 0;
+   list-style-type: none; /* remove default bullet */
+   margin: 16px 0;
   padding-left: 2em;
 }
 .meateaters li {
-	font-size: 20px;
-	line-height: 1.25em;
-	padding: 0 0 1.25em 1.6em; /* match the icon width */
+   font-size: 20px;
+   line-height: 1.25em;
+   padding: 0 0 1.25em 1.6em; /* match the icon width */
   text-indent: -1.6em;    /* match the icon width */
   margin-left:20px;
 }
 .meateaters li::before {
-	font-family: FontAwesome;
-	color: lime;
-  content: "\f06c"; /* escaped unicode for the icon */
+   font-family: FontAwesome;
+   color: lime;
+   /* escaped unicode for the icon */
   float: left;
   width: 1.6em; /* icon width + space */
 }
@@ -52,12 +171,12 @@ color:lime;
 }
 
 h1{
-margin-left:190px;
-color:	red;
+text-align:center;
+color: red;
 }
 
 .test1{
-margin-left:40px;
+text-align:center;
 }
 
 
@@ -67,311 +186,542 @@ margin-left:40px;
  color:#6644dd;
  }
 
- a{
- color:lime;
- }
 
 
- .decoratethis{
+ #decoratethis{
  color:#6644dd;
  }
 
 .container-fluid{
     background-color:#eeeeee;
 }
+
+
+
+   #button1 {
+  background-color:dimgray;
+  border: 6px solid white;
+  border-radius: 18px;
+  color: #fff;
+  display: block;
+  font-size:18px;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 2em 4em;
+  position: relative;
+  text-transform: uppercase;
+    font-family:Montserrat;
+}
+
+#button1::before,
+#button1::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+    border-radius:18px;
+}
+
+#button1:hover {
+    background-color:white;
+  color: dodgerblue;
+}
+
+
+
+#overviewline{
+        border-collapse: separate;
+  border-spacing: 16px 0;
+  border-spacing: 1rem 0;
+
+  display: table;
+
+  line-height: .25;
+  margin: 1em 0 .5em;
+  table-layout: auto;
+  text-align: center;
+
+  white-space: nowrap;
+  width: 100%;
+    color:white;
+    }
+
+    #overviewline:before,#overviewline:after{
+         border-top: 3px double #123;
+  content: '';
+  display: table-cell;
+  width: 50%;
+        border-top-color:whitesmoke;
+
+    }
+
+
+
+.filterDiv {
+  float: left;
+  background-color: white;
+  color: dodgerblue;
+
+
+  text-align: center;
+  margin: 2px;
+  display: none;
+    font-size:39px;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color:#00649b;
+    color:white;
+}
+
+.btn.active {
+  background-color: floralwhite;
+  color: dodgerblue;
+    font-weight:bold;
+}
+
+.btn.active:hover{
+    background-color:floralwhite !important;
+    color:dodgerblue !important;
+    font-size:20px !important;
+    font-weight:bold !important;
+}
+
+
+.movespace{
+    margin:44px;
+
+}
+
+
 </style>
 
 
-  </head>
 
+<div class="bgimg">
 
-<body>
+  <div class="middle">
+    <h1 id="overviewline" class="design1"> SEARCH FOR DISEASES </h1>
 
-     <h1> <a href="#" class="decoratethis">  Alphabetical Search </a> <i class="large material-icons"> search </i> </h1>
+    <p class="design2"> A TO Z </p>
+      <button id="button1" onclick="scrollToElement()" class="btn-3">  SEARCH NOW  </button>
+  </div>
 
-    <div role="main" class="content">
 
-  <div class="row">
-	<div class="l-content  block  __text">
 
-
-		<h2><strong><a href="#a">A</a>&nbsp;<a href="#B">B</a> <a href="#C">C</a> <a href="#D">D</a> <a href="#E">E</a> <a href="#F">F</a> <a href="#G">G</a> <a href="#H">H</a> <a href="#I">I</a> <a href="#J">J</a> <a href="#K">K</a> <a href="#L">L</a> <a href="#M">M</a> <a href="#N">N</a> <a href="#O">O</a> <a href="#P">P</a> <a href="#Q">Q</a> <a href="#R">R</a> <a href="#S">S</a> <a href="#T">T</a> <a href="#U">U</a> <a href="#V">V</a> <a href="#w">W</a> <a href="#X">X</a> <a href="#Y">Y</a> <a href="#Z">Z</a></strong></h2>
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-<h3 class="test1"> <strong><a name="a"></a> Result starting with A</strong></h3>
- <ul class="meateaters">
-  <a href="$"> <li> <strong> Achilles Tendonitis </strong> </li>
-  <li>  <strong> Arthritis </strong>   </li>  </a>
-     {% for publication in publications %}
-                  {% if  publication.get_type() == "sdis" %}
-                      {% if publication.get_title()[0]=='A'%}
-                          <a href="$"> <strong> <li> {{ publication.get_title() }} </strong> </li> </a>
-                          {% endif %}
-    {% endif %}
-            {% endfor %}
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-
-<h3><strong><a name="b"></a> Result starting with B</strong></h3>
- <a href="$"> <li> <strong> Blood Cancer (Leukaemia) </strong> </li>
-  <li>  <strong> Breast Cancer </strong>   </li>  </a>
-
-
-
-
-
-
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-
-
-<h3><strong><a name="C"></a> Result starting with C</strong></h3>
-
-<a href="$">
- <li> <strong> Cancer (Oncology) </strong> </li>
-  <li>  <strong> Corrective Spine Osteotomy  </strong>   </li>
-   <li> <strong> Carpal Tunnel Syndrome </strong> </li>
-   <li> <strong> Congenital Heart Disease </strong> </li> </a>
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-<h3><strong><a name="D"></a>Result starting with D</strong></h3>
-
-<a href="$">
-		 <li> <strong> Decompression Laminectomy </strong> </li>  </a>
-  <a href="$"> <li>  <strong> Dementia  </strong>   </li> </a>
-
-   <a href="$"> <li> <strong> Degenerative Spine Conditions  </strong> </li> </a>
-  <a href="$"> <li> <strong> DeQuervain Tenosynovitis </strong> </li>   </a>
- {% for publication in publications %}
-                  {% if  publication.get_type() == "sdis" %}
-                      {% if publication.get_title()[0]=='D'%}
-                   <a href="diseaseinfo"> <strong> <li> {{ publication.get_title() }} </strong> </li> </a>
-                          {% endif %}
-    {% endif %}
-            {% endfor %}
-
-
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-<h3><strong><a name="E"></a>Result starting with E</strong></h3>
-
-<a href="$">
-    <li> <strong> Ear, Nose & Throat (Otorhinolaryngology) </strong> </li>
-  <li>  <strong> Eyes (Ophthalmology)  </strong>   </li>
-   <li> <strong> Epilepsy  </strong> </li>  </a>
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-
-<h3><strong><a name="F"></a>Result starting with F</strong></h3>
-  <li> <strong> Flexible Pleuroscopy </strong> </li>
-  <li> <strong> Foot Pain (Plantar Fasciitis) </strong> </li>
-  <li> <strong> Fractures </strong> </li>
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-
-
-
-<h3><strong><a name="G"></a>Result starting with G</strong></h3>
-  <li> <strong> Gallstones </strong> </li>
-  <li> <strong> Gastritis </strong> </li>
-  <li> <strong> Golfer’s Elbow  </strong> </li>
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-<p><strong><a name="H"></a>Result starting with H</strong></p>
-	  <li> <strong> Hand Trauma </strong> </li>
-  <li> <strong> Hearing Loss </strong> </li>
-  <li> <strong> Heart Attack  </strong> </li>
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-
-<p><strong> <a name="I">Result starting with I </a></strong></p>
-		  <li> <strong> Insulin Administration  </strong> </li>
-  <li> <strong> Irritable Bowel Syndrome (IBS)  </strong> </li>
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-
-<p><strong><a name="J"></a>J</strong></p>
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-<p><strong><a name="K"></a>Result starting with K</strong></p>
-				  <li> <strong> Kidney Cancer  </strong> </li>
-  <li> <strong> Knee Arthritis   </strong> </li>
-
-
-
-
-
-<p><strong><a name="L"></a> Result starting with L</strong></p>
-			  <li> <strong> Liver Cancer  </strong> </li>
-  <li> <strong> Lung Cancer    </strong> </li>
-
-
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-<p><strong><a name="M"></a>Result starting with M</strong></p>
-		  <li> <strong> Macular Degeneration  </strong> </li>
-  <li> <strong> Meniscus Tear     </strong> </li>
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-
-<p><strong><a name="N"></a>Result starting with N</strong></p>
- <li> <strong> Nasopharynx (Nose) Cancer  </strong> </li>
-  <li> <strong> Neonatology     </strong> </li>
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-<p><strong><a name="O"></a>Result starting with O</strong></p>
-		 <li> <strong> Orthopaedic Rehabilitation  </strong> </li>
-  <li> <strong> Osteoporosis     </strong> </li>
-
-
-
-
-
-<p><strong><a name="P"></a>Result starting with P</strong></p>
-					 <li> <strong> Pancreatic Cancer   </strong> </li>
-  <li> <strong> Parkinson’s Disease     </strong> </li>
-
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-<p><strong><a name="Q"></a>Result starting with Q</strong></p>
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-<p><strong><a name="R"></a>Result starting with R</strong></p>
-
-<p><strong>&nbsp;</strong></p>
-
-
-<p><strong><a name="S"></a>Result starting with S</strong></p>
-	 <li> <strong> Scoliosis    </strong> </li>
-  <li> <strong> Stomach cancer </strong> </li>
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-<p><strong><a name="T"></a>Result starting with T</strong></p>
-			 <li> <strong> Tennis Elbow    </strong> </li>
-  <li> <strong> Tinnitus </strong> </li>
-
-
-
-
-
-
-<p><strong>&nbsp;</strong></p>
-
-
-
-<p><strong><a name="U"></a>Result starting with U</strong></p>
-
-<p><strong>&nbsp;</strong></p>
-
-<p><strong><a name="V"></a>Result starting with V</strong></p>
-<p><strong>&nbsp;</strong></p>
-
-
-<p><strong><a name="w"></a>Result starting with W</strong></p>
-<p><strong>&nbsp;</strong></p>
-
-<p><strong><a name="X"></a>Result starting with X</strong></p>
-<p><strong>&nbsp;</strong></p>
-
-<p><strong><a name="Y"></a>Result starting with Y</strong></p>
-<p><strong>&nbsp;</strong></p>
-
-<p><strong><a name="Z"></a>Result starting with Z</strong></p>
-
-
-
-
-</ul>
-
-
-
-	</div>
 </div>
+
+
+<!-- About Section -->
+
+
+
+
+
+
+
+
+
+
+<h2>Filter Disease from A - Z </h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('A')"> A</button>
+  <button class="btn" onclick="filterSelection('B')"> B</button>
+  <button class="btn" onclick="filterSelection('C')"> C</button>
+  <button class="btn" onclick="filterSelection('D')"> D</button>
+ <button class="btn" onclick="filterSelection('E')"> E </button>
+<button class="btn" onclick="filterSelection('F')"> F </button>
+<button class="btn" onclick="filterSelection('G')"> G </button>
+<button class="btn" onclick="filterSelection('H')"> H </button>
+<button class="btn" onclick="filterSelection('I')"> I </button>
+<button class="btn" onclick="filterSelection('J')"> J </button>
+<button class="btn" onclick="filterSelection('K')"> K </button>
+<button class="btn" onclick="filterSelection('L')"> L </button>
+<button class="btn" onclick="filterSelection('M')"> M </button>
+<button class="btn" onclick="filterSelection('N')"> N </button>
+<button class="btn" onclick="filterSelection('O')"> O </button>
+<button class="btn" onclick="filterSelection('P')"> P </button>
+<button class="btn" onclick="filterSelection('Q')"> Q </button>
+<button class="btn" onclick="filterSelection('R')"> R </button>
+<button class="btn" onclick="filterSelection('S')"> S </button>
+<button class="btn" onclick="filterSelection('T')"> T </button>
+<button class="btn" onclick="filterSelection('U')"> U </button>
+<button class="btn" onclick="filterSelection('V')"> V </button>
+<button class="btn" onclick="filterSelection('W')"> W </button>
+<button class="btn" onclick="filterSelection('X')"> X </button>
+<button class="btn" onclick="filterSelection('Y')"> Y </button>
+<button class="btn" onclick="filterSelection('Z')"> Z </button>
+
+
+</div>
+
+<div class="container">
+
+  <div class="filterdiv A">
+  {% for disease in specific_disease %}
+      {% if disease.get_title()[0]=='A' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+
+  <div class="filterdiv B">
+       {% for disease in specific_disease %}
+      {% if disease.get_title()[0]=='B' %}
+           <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+               {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
       </div>
 
-{% endblock %}
+  <div class="filterdiv C">
+       {% for disease in specific_disease %}
+      {% if disease.get_title()[0]=='C' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }}</a>
+      {% endif %}
+  {% endfor %}
+
+  </div>
+
+  <div class="filterdiv D">
+       {% for disease in specific_disease %}
+      {% if disease.get_title()[0]=='D' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+      </div>
+
+
+  <div class="filterdiv E">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='E' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+ <div class="filterdiv F">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='F' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv G">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='G' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+ <div class="filterdiv H">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='H' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv I">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='I' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+ <div class="filterdiv N">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='J' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+ <div class="filterdiv N">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='K' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+ </div>
+
+ <div class="filterdiv L">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='L' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+ </div>
+
+ <div class="filterdiv M">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='M' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+ </div>
+
+ <div class="filterdiv N">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='N' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv O">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='O' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv P">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='P' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv Q">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='Q' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv R">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='R' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv S">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='S' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv T">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='T' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv U">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='U' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+
+ <div class="filterdiv V">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='V' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+
+ <div class="filterdiv W">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='W' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv X">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='X' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+ <div class="filterdiv Y">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='Y' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+ <div class="filterdiv Z">
+   {% for disease in specific_disease %}
+
+      {% if disease.get_title()[0]=='Z' %}
+          <a class="movespace" href="{{ url_for('get_disease',title=disease.get_title() ) }}">
+              {{ disease.get_title() }} </a>
+      {% endif %}
+  {% endfor %}
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+        <script>
+
+function scrollToElement(element) {
+	document.getElementById('myBtnContainer').scrollIntoView({block: 'start', behavior: 'smooth'});
+
+}
+
+</script>
+
+
+
+    {%  endblock %}
+
+
